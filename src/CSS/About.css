@@ -1,0 +1,161 @@
+:root {
+
+ 
+    --primary: #118c4f;
+    
+    --background: #f5f8ff;
+    
+    }
+
+
+.probe {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.lift {
+    width: 60%;
+    height: 400px;
+    background-color: rgb(152, 227, 152);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.lift .small {
+    width: 50%;
+    display: block;
+    margin-bottom: 1rem;
+    margin-left: 80px;
+    color: var(--primary);
+    font-size: 1rem;
+}
+
+.lift .content {
+    width: 70%;
+    margin-left: 80px;
+    font-size: 1rem;
+}
+
+.lift .explore {
+    width: 100px;
+    margin-left: 80px;
+    margin-top: 1rem;
+    padding: .5rem ;
+    border: none;
+    background-color: var(--primary);
+    color: var(--background);
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 1.95px 1.95px 2.6px;
+    cursor: pointer;
+}
+
+ .lift .explore:hover {
+    background-color: var(--background);
+    color: var(--primary);
+    transform: scale(.3s);
+    transition: .3s ease-in;
+    box-shadow: 0px 0px 8px var(#333);
+}
+
+.lift h3 {
+
+    width: 50%;
+    margin-left: 80px;
+    margin-bottom: 1rem;
+}
+
+.right img {
+    width: 100%;
+    
+}
+
+.con {
+    width: 300px;
+    background-color: #eee;
+    padding: 1rem;
+    margin: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    border-radius: 5px;
+}
+
+.clip {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card {
+    background-color: var(--background);
+    margin: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;  
+    padding: 2rem;
+    color: #333;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.card .explore {
+    width: 100px;
+    margin-top: 1rem;
+    padding: .5rem ;
+    border: none;
+    background-color: var(--primary);
+    color: var(--background);
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 1.95px 1.95px 2.6px;
+    cursor: pointer;
+}
+
+.card .explore:hover {
+    background-color: var(--background);
+    color: var(--primary);
+    transform: scale(.3s);
+    transition: .3s ease-in;
+    box-shadow: 0px 0px 8px var(#333);
+}
+
+h1 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+
+.card p {
+    font-size: 1rem;
+}
+
+
+
+.card .text {
+    padding: .5rem;
+
+    background-color: #eee;
+    border-radius: 5px;
+    margin-top: 2rem;
+}
+
+@media screen and (max-width:940px) {
+    .probe {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .lift {
+        width: 100%;
+        margin-top: -10px;
+    }
+
+    .clip {
+        flex-direction: column;
+    }
+}

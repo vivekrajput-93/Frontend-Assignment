@@ -1,0 +1,60 @@
+.home .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 4rem auto;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.home .left {
+    padding: 1rem;
+}
+
+
+.home h2 {
+    padding: 1rem 0;
+    margin-left: 0px;
+    position: relative;
+    left: 60px;
+    bottom: 100px;
+}
+
+.home .input-container {
+    padding: 1rem;
+}
+
+.home .right {
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+.left p {
+    position: relative;
+    left: 60px;
+    bottom: 80px;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.home .img-container {
+    width: 100%;
+    display: flex;
+}
+
+.home #img {
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    mix-blend-mode: multiply;
+}
+
+@media screen and (max-width: 940px) {
+    .home .container {
+        grid-template-columns: 1fr;
+        margin: 1rem 0;
+    }
+
+}

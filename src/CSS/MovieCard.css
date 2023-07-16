@@ -1,0 +1,39 @@
+:root {
+
+ 
+    --primary: #118c4f;
+    
+    --background: #f5f8ff;
+    
+    }
+
+
+
+
+
+
+@media screen and (max-width:1200px) {
+    #card {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 520px;
+    }
+}
+
+
+
+@media screen and (max-width:940px) {
+    #card {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 520px;
+    }
+}
+
+@media screen and (max-width:718px) {
+    #card {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: 520px;
+    }
+}

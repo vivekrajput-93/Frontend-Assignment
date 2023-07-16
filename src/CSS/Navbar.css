@@ -1,0 +1,79 @@
+.header {
+    width: 100%;
+    height: 90px;
+    border: 1px solid #eee;
+    background: #fff;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10;
+
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 1rem; */
+    height: 100%;
+}
+
+.logo {
+    position: relative;
+    left: 30px;
+    font-size: 2.8rem;
+}
+
+.menu {
+    display: flex;
+    position: relative;
+}
+
+.btn {
+    position: relative;
+    bottom: 10px;
+}
+
+.menu li {
+    padding: 0 1rem;
+    margin: 0;
+}
+
+
+ Link {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.hamburger {
+    
+    display: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width:940px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .menu {
+        position: absolute;
+        flex-direction: column;
+        justify-content: start;
+        top: 90px;
+        right: -100%;
+        width: 50%;
+        height: 200vh;
+        transition: 0.4s;
+        z-index: 2;
+        background: #fff;
+        border-left: 1px solid #eee;
+    }
+
+
+    .menu.active {
+        right: 0;
+    }
+
+}
